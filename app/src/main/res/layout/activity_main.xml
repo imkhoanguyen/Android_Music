@@ -1,0 +1,69 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="Mô tả về nội dung hoặc chức năng của ImageButton"
+            app:srcCompat="@drawable/music1" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="Mô tả về nội dung hoặc chức năng của ImageButton"
+            android:visibility="gone"
+            app:srcCompat="@drawable/reutnsg" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="Mô tả về nội dung hoặc chức năng của ImageButton"
+            app:srcCompat="@drawable/quitasf" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/folderPathTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLayout"
+        android:gravity="center"
+        android:text="Đường dẫn: /path/to/folder"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/folderListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/folderPathTextView"
+        android:layout_marginTop="6dp"
+        android:choiceMode="singleChoice"
+        android:divider="#B6B6B6"
+        android:dividerHeight="0.5dp"
+        android:padding="16dp" />
+
+
+
+</RelativeLayout>
